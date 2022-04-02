@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>JS validation</title>
+</head>
+<body>
+
+    <a class="fancy-btn position-center" href="#" id="open-modal">Open the modal!</a>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <div class="modal-header text-center">
+                <h1>Add product</h1>
+                <h3>Second-hand Car</h3>
+                <small><strong>Category:</strong> Automobiles</small>
+                <div class="brand-image-holder">
+                    <img src="http://www.izmostock.com/wp-content/uploads/2015/12/bmw.png" alt="bmw" class="bmw"/>
+                    <img src="http://www.izmostock.com/wp-content/uploads/2015/12/audi.gif" alt="audi" class="audi"/>
+                    <img src="http://www.izmostock.com/wp-content/uploads/2015/12/fiat.png" alt="fiat" class="fiat"/>
+                    <img src="http://www.izmostock.com/wp-content/uploads/2015/12/mini.gif" alt="mini" class="mini"/>
+                </div>
+
+                <a href="#" id="close-modal">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF3_Bp6uIXZ9m4-nPI9UX2rzk5d6Pd41jivkMJ8aZzeQu03AKzztRj8JE" alt="closeIcon">
+                </a>
+            </div>
+            <div class="modal-body">
+                <form action="/" id="add-form">
+                    <div class="form-section">
+                        <div class="form-item-container">
+                            <label for="title">Title of announcement:</label>
+                            <input type="text" id="title"/>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="brand">Brand:</label>
+                            <select name="brand" id="brand">
+                                <option value="no" selected="selected">Select a brand...</option>
+                                <option value="bmw">BMW</option>
+                                <option value="audi">Audi</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="mini">Mini</option>
+
+                                <!-- When you add new option, please make sure you add the corresponding image in the brand-image-holder div -->
+
+                            </select>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="year">Manufacturing Year:</label>
+                            <select name="year" id="year">
+                                <option value="no" selected="selected">Select a year...</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                            </select>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="mileage">Mileage:</label>
+                            <input class="number" type="text" id="mileage"/>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="fuel">Fuel type:</label>
+                            <select name="fuel" id="fuel">
+                                <option value="no" selected="selected">Select fuel type...</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="gasoline">Gasoline</option>
+                            </select>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="color">Color: <span class="selected-color"></span></label>
+                            <select name="color" id="color">
+
+                                <!-- You could use even hex color code for the option value -->
+
+                                <option value="no">Select a color...</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="orange">Orange</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-item-container">
+                            <label for="damaged">Vehicle damaged (Yes/No)</label>
+                            <input type="checkbox" id="damaged"/>
+                        </div>
+                        <div class="form-item-container" id="damage-details-container">
+                            <label for="damage-details">Enter crash details:</label>
+                            <textarea name="damage-details" id="damage-details"></textarea>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="price">Price:</label>
+                            <input class="number" type="text" id="price"/>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="currency">Currency:</label>
+                            <select name="currency" id="currency">
+                                <option value="no" selected="selected">Select currency...</option>
+                                <option value="RON">RON</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+                        <div class="form-item-container">
+                            <input class="fancy-btn" type="submit" id="submit" value="Submit"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
